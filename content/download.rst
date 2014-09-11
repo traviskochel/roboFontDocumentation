@@ -8,7 +8,7 @@ Download
     <p>
         <a class="buybutton" title="Buy RoboFont" href="https://sites.fastspring.com/typemytype/instant/robofont">Buy Now</a>
         &nbsp;&nbsp;&nbsp;
-        <a class="buybutton" title="Download RoboFont" href="http://robofont.com/downloads/">Download</a>
+        <a class="buybutton" title="Download RoboFont" href="http://tools.robofont.com/downloads/">Download</a>
     </p>
     <p id="buyErrorMessage" style="display: none;"><em style="color: #ff0000;">You must agree the end user license, before purchasing RoboFont</em></p>
     <p>
