@@ -255,6 +255,8 @@ from sphinx.directives.code import LiteralInclude
 from sphinx.directives.other import TocTree
 from sphinx.writers.html import HTMLTranslator
 
+from docutils import io, utils, statemachine
+
 def visit_download_reference(self, node):
     if node.hasattr('filename'):
         data = dict(
@@ -292,8 +294,7 @@ class DocTocTree(TocTree):
         rst[0][0]['entries'].reverse()
         return rst
 
-from docutils import io, utils, statemachine
-from docutils.error_reporting import ErrorString
+
 
 class BlogPreview(directives.misc.Include):
 
@@ -351,7 +352,7 @@ class BlogPreview(directives.misc.Include):
                     handle_io_errors=None)
             except IOError, error:
                 raise self.severe(u'Problems with "%s" directive path:\n%s.' %
-                            (self.name, ErrorString(error)))
+                            (self.name, error))
             content = include_file.read()
             include_file.close()
 
