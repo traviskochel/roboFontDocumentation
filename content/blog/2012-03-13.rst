@@ -1,0 +1,23 @@
+Robothon 12, The Hague
+======================
+
+Robothon was great, lots of nice people and super organized!
+Thanks Erik, Paul and the Type Media students.
+
+.. Continue Reading
+
+All Robothon lectures are available on Robofab Consortium's vimeo.
+
+The RoboFont lecture:
+
+.. raw:: html
+
+    <iframe src="html://player.vimeo.com/video/38350056" width="500" height="375" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+All code shown in the lecture is available on github:
+
+* `extensions <https://github.com/typemytype/RoboFontExtensions>`_
+* `example scripts <https://github.com/typemytype/RoboFontExamples>`_
+
+enjoy!

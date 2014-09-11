@@ -1,0 +1,25 @@
+RoboFont 1.2
+============
+
+RoboFont 1.2 is out and released today, just in time before `Robothon <http://robofab.com/robothon2012/>`_.
+
+.. Continue Reading
+
+This update includes a number of improvements, bug fixes and new features. The biggest change happened under the hood in the bridge between RoboFont and FDK.
+
+Some new feature highlights:
+
+* Space Centers accepts drag'n drop of glyphs from the Font Overview.
+* Inspecter window glyph info also accepts smart side-bearing input *=e+10*
+* Cleaner UI
+* Open python files natively
+* Open folders with python files by dragging on top of the app icon.
+* New license validation system and :ref:`web shop <download>`.
+* Have a look at the :ref:`versionHistory` for the full list of changes and additions.
+
+Existing users should have received an email with a direct download.
+Student licenses will be resent after RoboThon.
+
+I would like to thank all the beta testers and all users posting on the `forums <http://forum.robofont.com/>`_ for their precious feedback and feature requests.
+
+Enjoy!

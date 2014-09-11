@@ -1,0 +1,8 @@
+RoboFont 1.0 Release
+====================
+
+.. image:: /static/blogRF1-1Release.png
+
+RoboFont is released, version 1.0 is the first public version available for ordering.
+
+Enjoy!

@@ -1,0 +1,152 @@
+{%- extends "basic/layout.html" %}
+
+{%- macro navBar() %}{%- endmacro %}
+
+{%- block extrahead %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="{{ pathto('_static/roboFontURLhandler.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/menu_hide.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/buy.js', 1) }}"></script>
+{% endblock %}
+
+{%- block header %}
+<div id="page">
+    <header id="branding">
+        <hgroup>
+            <h1 id="site-title">
+                <span>
+                    <a href="{{ pathto(master_doc) }}" title="RoboFont" rel="home">RoboFont</a>
+                </span>
+            </h1>
+            <h2 id="site-description">The UFO Editor You Have Been Waiting For ;-)</h2>
+            {%- include "searchbox.html" %}
+        </hgroup>
+        <nav id="access" role="navigation">
+              {{ toctree(includehidden=True, collapse=False, maxdepth=1, titles_only=True) }}
+        </nav>
+    </header>
+{% endblock %}
+
+{%- block relbar1 %}{% endblock %}
+
+{%- block sidebar1 %}{% endblock %}
+
+{%- block sidebar2 %}{% endblock %}
+
+{% block sidebartoc %}{% endblock %}
+
+{%- block sidebarsearch %}{%- endblock %}
+
+{% block document %}
+<div id="main">
+    <div id="{%- if pagename != 'index' %}primary{% else%}homepage{% endif %}">
+        <div id="content">
+            <div class="entry-content">
+                {% block body %} {% endblock %}
+            </div>
+            {%- if pagename != "index" %}
+                <div class="pageNavNext">
+                {% if prev %}
+                    <a href="{{ prev.link|e }}">{{ prev.title }}</a>
+                {% endif %}
+                {% if next %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ next.link|e }}">{{ next.title }}</a>
+                {% endif %}
+                </div>
+            {%- endif %}
+        </div>
+    </div>
+    {%- if pagename != "index" %}
+        <div id="secondary">
+        {%- if render_sidebar %}
+            <aside class="widget">
+                <h3 class="widget-title">Documentation</h3>
+                <div class="showHideWidgets">
+                    <a id="showSubMenu">show all</a>
+                    <a id="hideSubMenu">hide</a>
+                </div>
+                {{ toctree(includehidden=True, collapse=False, maxdepth=-1, titles_only=True) }}
+            </aside>
+        {%- endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{%- block relbar2 %}{% endblock %}
+
+{%- block footer %}
+    <footer id="colophon" role="contentinfo">
+        <div id="supplementary" class="three">
+            <div id="first" class="widget-area">
+                <aside class="widget widget_links">
+                    <h3 class="widget-title">Contributors</h3>
+                    <ul class="blogroll">
+                        <li><a href="http://www.fontbureau.com" target="_blank">Font Bureau</a></li>
+                        <li><a href="http://www.petr.com" target="_blank">Petr van Blokland</a></li>
+                        <li><a href="http://www.typemytype.com" target="_blank">TypeMyType</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_links">
+                    <h3 class="widget-title">Scripts &amp; Code</h3>
+                    <ul class="blogroll">
+                        <li><a href="http://github.com/typemytype" target="_blank">Git Hub</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div id="second" class="widget-area">
+                <aside class="widget widget_links">
+                    <h3 class="widget-title">Thanks to</h3>
+                    <ul class="blogroll">
+                        <li><a href="http://www.benkiel.com/" target="_blank">Ben Kiel</a></li>
+                        <li><a href="http://sourceforge.net/projects/fonttools/">FontTools</a></li>
+                        <li><a href="http://www.hipertipo.com/" target="_blank">Gustavo Ferreira</a></li>
+                        <li><a href="http://www.letterror.com">LettError</a></li>
+                        <li><a href="http://www.robofab.com">RoboFab</a></li>
+                        <li><a href="http://www.typesupply.com">Type Supply</a></li>
+                        <li><a href="http://unifiedfontobject.org/">Unified Font Object</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div id="third" class="widget-area">
+                <aside class="widget widget_text">
+                    <h3 class="widget-title">Social</h3>
+                    <div class="textwidget">
+                        <p class="social">
+                            <a href="http://doc.robofont.com/rss">
+                                <img src="http://doc.robofont.com/wp-content/themes/robofont/social/feed.png" alt="rss" title="rss">
+                            </a>
+                            <a href="http://forum.robofont.com/rss">
+                                <img src="http://doc.robofont.com/wp-content/themes/robofont/social/forumFeed.png" alt="forum rss" title="forum rss">
+                            </a>
+                            <a href="http://twitter.com/robofonteditor">
+                                <img src="http://doc.robofont.com/wp-content/themes/robofont/social/twitter.png" alt="twitter">
+                            </a>
+                            <a href="http://vimeo.com/robofont/">
+                                <img src="http://doc.robofont.com/wp-content/themes/robofont/social/vimeo.png" alt="twitter">
+                            </a>
+                            <a href="http://www.facebook.com/robofont">
+                                <img src="http://doc.robofont.com/wp-content/themes/robofont/social/facebook.png" alt="facebook">
+                            </a>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div id="site-generator">
+                &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.typemytype.com">Type My Type</a>
+            </div>
+        </div>
+    </footer>
+</div>
+{%- if pagename == "genindex" %}
+    <script>
+        content = $("#content");
+        html = content.html();
+        // html = html.replace(/\(\) \(in module roboFont\)/g,'');
+        html = html.replace(/ \(built-in function\)/g,'');
+        html = html.replace(/ \(built-in class\)/g,'');
+        content.html(html);
+    </script>
+{%- endif %}
+
+{%- endblock %}

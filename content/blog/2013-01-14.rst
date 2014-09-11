@@ -1,0 +1,36 @@
+RoboFont 1.4
+============
+
+.. image:: /static/blogRoboFont1-4.png
+
+
+RoboFont 1.4 is ready for you ... and it is better than ever!
+This update includes a number of improvements, bug fixes and new features.
+
+.. Continue Reading
+
+Some highlights:
+
+*   Smart Set Binders, aka organizing Smart Sets in "folders"
+*   Undo for guides, both local as global guides
+*   Optimized RTL support in Space Center and Kern Center
+*   Support for boolean operations on glyph objects:
+
+    ::
+
+        result = glyph1 | glyph2 (union)
+        result = glyph1 % glyph2 (difference)
+        result = glyph1 & glyph2 (intersection)
+        result = glyph1 ^ glyph2 (xor)
+
+
+|
+
+Have a look at the :ref:`versionHistory` for the full list of changes and additions.
+
+You should get an automatic update when you use RoboFont 1.3.
+If you still use RoboFont 1.1 you should :ref:`redownload <download>` the app.
+
+I would like to thank all the beta testers and all users posting on the `forums <http://forum.robofont.com/>`_ for their precious feedback and feature requests.
+
+enjoy!

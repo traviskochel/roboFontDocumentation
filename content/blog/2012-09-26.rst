@@ -1,0 +1,33 @@
+RoboFont just got a lot better...
+=================================
+
+.. image:: /static/blogRoboFOnt1-3.png
+
+RoboFont 1.3 is out! and has lots of improvements, new features and bug fixes, a brief overview.
+
+.. Continue Reading
+
+* New embedded FDK version.
+* Possible to have a mixed selection in the glyph view containing points, segments, contours, anchors, components and an image.
+* Possible to use RoboFont as a shell command, see preferences to install the shell command and the usage. Super handy for third party apps that like to hook into RoboFont externally.
+* Drag & drop in Font Overview allowing to sort glyph order.
+* Open feature files natively and export them to open UFOs.
+* Lots of new preference settings:
+* 45° shift contraints settings.
+* New Hot Key commands like Test Install.
+* An other color for open contours starting points.
+* Retina support
+* Code signed
+
+|
+
+Read the :ref:`versionHistory`, a complete list of changes, add ons  and new features.
+
+You should get an atomically update when you use RoboFont 1.2.
+If you still use RoboFont 1.1 you should :ref:`redownload <download>` the app.
+
+I would like to thank all the beta testers and all users posting on the `forums <http://forum.robofont.com/>`_ for their precious feedback and feature requests.
+
+Enjoy and draw good type!
+
+The documentation will get incremental updates.

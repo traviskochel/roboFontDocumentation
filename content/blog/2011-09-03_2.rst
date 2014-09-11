@@ -1,0 +1,6 @@
+ATypi ’11 Reykjavik
+===================
+
+.. image:: /static/blogReykjavik.jpg
+
+RoboFont is been introduced at ATypi '11 in Reykjavík. This is the start of some really exiting development in designing type.

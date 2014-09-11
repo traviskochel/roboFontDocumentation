@@ -1,0 +1,57 @@
+Proud to welcome RoboFont 1.1
+=============================
+
+Today I am proud to announce the release of RoboFont 1.1, which includes several new features and improvements.
+
+.. Continue Reading
+
+Here are some of the highlights of this release:
+------------------------------------------------
+
+Smart side-bearings input.
+
+The numeric input fields for metrics in the Space Center can now handle simple aritmetic expressions like '=e+10-z*10' or '-=10+a'.
+
+Using this syntax, glyph names are dynamically replaced by their value for that metrics field.
+
+Keyboard navigation in Info sheet
+---------------------------------
+
+It is now possible to navigate through the Info sheet using the 'tab' key, jumping from one input field to the next.
+
+Improved support for .ttf output
+--------------------------------
+
+Generation of TrueType files has been improved and now supports components.
+
+Python files are now document-based
+-----------------------------------
+
+Python files in RoboFont now use the native document object for tigther integration with OS X. This means that RoboFont can now be your Python editor of choice.
+
+Support for nested components
+-----------------------------
+
+Components can now be nested, so it is possible to build composed glyphs using other composed glyphs as components.
+
+Small bug fixes
+---------------
+
+Version 1.0 had a few minor bugs and rough edges which have been fixed in 1.1. Thanks beta testers and forum members for reporting.
+
+New Documenation
+----------------
+
+The site has been updated with improved :ref:`documentation`. Massive thanks to `Gustavo Ferreira <http://www.hipertipo.com/>`_ and `Ben Kiel <http://www.benkiel.com/>`_ for helping me out.
+
+|
+
+Have a look at the :ref:`versionHistory` for the full list of changes and additions.
+
+Registered users will receive an email with instructions on how to update.
+
+Trial versions with some test time left can simply download RoboFont again, with the new version (see :ref:`download`).
+
+Student versions can use the same link they have been provided with by their teachers.
+
+Have fun!
