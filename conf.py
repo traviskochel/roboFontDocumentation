@@ -375,7 +375,7 @@ class BlogPreview(directives.misc.Include):
             rawtext += "\n\n"
             c += 1
 
-        rawtext += '.. raw:: html\n\n    </aside>\n\n'
+        rawtext += '.. raw:: html\n\n    </div></aside><div>\n\n'
 
         include_lines = statemachine.string2lines(
                 rawtext, tab_width, convert_whitespace=1)

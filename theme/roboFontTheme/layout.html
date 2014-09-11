@@ -43,7 +43,7 @@
         <div id="content">
             <div class="entry-content">
                 {% block body %} {% endblock %}
-            </div>
+            </div> <!-- close entry-content -->
             {%- if pagename != "index" %}
                 <div class="pageNavNext">
                 {% if prev %}
@@ -52,10 +52,10 @@
                 {% if next %}
                     &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ next.link|e }}">{{ next.title }}</a>
                 {% endif %}
-                </div>
+                </div> <!-- close pagennav -->
             {%- endif %}
-        </div>
-    </div>
+        </div> <!-- close content -->
+    </div> <!-- close index/homepage -->
     {%- if pagename != "index" %}
         <div id="secondary">
         {%- if render_sidebar %}
@@ -68,9 +68,9 @@
                 {{ toctree(includehidden=True, collapse=False, maxdepth=-1, titles_only=True) }}
             </aside>
         {%- endif %}
-        </div>
+        </div> <!-- close secondary -->
     {% endif %}
-</div>
+</div> <!-- close main -->
 {% endblock %}
 
 {%- block relbar2 %}{% endblock %}
@@ -93,7 +93,7 @@
                         <li><a href="http://github.com/typemytype" target="_blank">Git Hub</a></li>
                     </ul>
                 </aside>
-            </div>
+            </div> <!-- close first -->
             <div id="second" class="widget-area">
                 <aside class="widget widget_links">
                     <h3 class="widget-title">Thanks to</h3>
@@ -107,7 +107,7 @@
                         <li><a href="http://unifiedfontobject.org/">Unified Font Object</a></li>
                     </ul>
                 </aside>
-            </div>
+            </div> <!-- close second -->
             <div id="third" class="widget-area">
                 <aside class="widget widget_text">
                     <h3 class="widget-title">Social</h3>
@@ -131,13 +131,13 @@
                         </p>
                     </div>
                 </aside>
-            </div>
+            </div> <!-- close third -->
             <div id="site-generator">
                 &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.typemytype.com">Type My Type</a>
             </div>
-        </div>
+        </div> <!-- close supplementary -->
     </footer>
-</div>
+</div> <!-- close page -->
 {%- if pagename == "genindex" %}
     <script>
         content = $("#content");
