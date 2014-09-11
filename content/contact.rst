@@ -32,6 +32,5 @@ Get in touch, we will reply as soon as possible.
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script>
         $("#contactForm").validate();
-
         $("#contactForm input[name='returnURL']").val(location.pathname.substring(0, location.pathname.lastIndexOf('/'))+'/thanks.html');
     </script>
