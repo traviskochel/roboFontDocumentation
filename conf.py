@@ -336,6 +336,7 @@ class BlogPreview(directives.misc.Include):
             rawtext += len(title)*'-' + "\n\n"
 
         c = 0
+        paths.sort()
         for blogPath in reversed(paths):
             if c > max_posts:
                 break
