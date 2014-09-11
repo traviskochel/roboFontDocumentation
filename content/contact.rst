@@ -8,7 +8,7 @@ Get in touch, we will reply as soon as possible.
 .. raw:: html
 
     <form method="post" action="http://tools.robofont.com/roboForms.php"  id="contactForm" class="cleanForm">
-        <input type="hidden" name="returnURL" value="http://robofont.com/content/thanks.html">
+        <input type="hidden" name="returnURL" value="">
         <fieldset>
             <label>Name <em>*</em></label>
             <input type="text" name="name" required>
@@ -32,4 +32,5 @@ Get in touch, we will reply as soon as possible.
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script>
         $("#contactForm").validate();
+        $("#contactForm input[returnURL]").val(location.pathname.substring(0, location.pathname.lastIndexOf('/'))+'/thanks.html');
     </script>
