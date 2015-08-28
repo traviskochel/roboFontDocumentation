@@ -141,7 +141,7 @@ Tools Menu methods
 
 .. function:: tool.paste()
 
-.. function:: tool.additionContectualMenuItems()
+.. function:: tool.additionContextualMenuItems()
 
     called when a contextual menu is created, it is required to return a list of tuples with a title string and a callback function
     example [("additional stuff", myObject.myAdditionMenuCallback), ]
