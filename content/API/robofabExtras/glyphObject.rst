@@ -69,6 +69,15 @@ RoboFab Glyph Extras
     .. attribute:: angledRightMargin
 
         returns the angled right margin based on the italic angle in the font.info
+    
+    
+    .. attribute:: getRayLeftMargin(y)
+
+        returns the left margin at the value of y (similar to the beam)
+        
+    .. attribute:: getRayRightMargin(y)
+
+        returns the right margin at the value of y (similar to the beam)
 
     .. attribute:: mark
 
